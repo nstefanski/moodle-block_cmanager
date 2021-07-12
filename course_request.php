@@ -29,7 +29,6 @@ require_once("../../config.php");
 global $CFG, $USER, $DB;
 require_once("$CFG->libdir/formslib.php");
 require_once('../../course/lib.php');
-require_once($CFG->libdir.'/coursecatlib.php');
 require_login();
 
 /** Navigation Bar **/

@@ -30,7 +30,6 @@
  *  representations of queues etc.
  * ------------------------------------------------------------------------
  */
-require_once($CFG->libdir. '/coursecatlib.php');
 ?>
 
 <style>

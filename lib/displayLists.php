@@ -289,7 +289,7 @@ function block_cmanager_display_admin_list($pendinglist, $includerightpanel, $in
 	if ($editcatavailable == true) {
 		$movetocategories = array();
         $notused = array();
-        $movetocategories += coursecat::make_categories_list();
+        $movetocategories += core_course_category::make_categories_list();
       	$cateDrop =  html_writer::select($movetocategories, 'cat'.$rec->id, $rec->cate, null);
  	    $catlisthtml .= '<div id="catname" class="catname">'.$cateDrop . '';
 		$catlisthtml .=  '<input id="clickMe" type="button" value="'.get_string('update','block_cmanager').'" onclick="saveChangedCategory(\''.$rec->id.'\')" /></div>';

@@ -26,7 +26,6 @@
  */
 
 require_once("../../../config.php");
-require_once($CFG->libdir. '/coursecatlib.php');
 
 global $CFG, $DB;
 
@@ -86,7 +85,7 @@ function block_cmanager_create_new_course_by_record_id($mid, $sendMail) {
     global $context;
 
     //** Create an object to hold our new course information
-    $new_course = new block_cmanager_new_course();
+    $new_course = new stdClass();
     
     
     // Starting course creation process
